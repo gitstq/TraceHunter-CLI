@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "tracehunter-cli"
+version = "1.0.0"
+description = "Lightweight Terminal Username Digital Footprint Tracking Engine"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "TraceHunter Team"},
+]
+keywords = ["osint", "username-search", "digital-footprint", "recon", "security", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Security",
+    "Topic :: Security",
+    "Topic :: Internet :: WWW/HTTP",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+tracehunter = "tracehunter_cli.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/TraceHunter-CLI"
+Repository = "https://github.com/gitstq/TraceHunter-CLI"
+Issues = "https://github.com/gitstq/TraceHunter-CLI/issues"
